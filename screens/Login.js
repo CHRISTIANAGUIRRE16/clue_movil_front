@@ -62,7 +62,7 @@ const Login = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>Password</Text>
+                    }}>Contraseña</Text>
 
                     <View style={{
                         width: "100%",
@@ -117,7 +117,7 @@ const Login = ({ navigation }) => {
                 </View>
 
                 <Button
-                    title="Login"
+                    title="Iniciar sesión"
                     filled
                     style={{
                         marginTop: 18,
@@ -134,7 +134,7 @@ const Login = ({ navigation }) => {
                             marginHorizontal: 10
                         }}
                     />
-                    <Text style={{ fontSize: 14 }}>Or Login with</Text>
+                    <Text style={{ fontSize: 14 }}>ó inicia sesión con</Text>
                     <View
                         style={{
                             flex: 1,
@@ -209,7 +209,7 @@ const Login = ({ navigation }) => {
                     justifyContent: "center",
                     marginVertical: 22
                 }}>
-                    <Text style={{ fontSize: 16, color: COLORS.black }}>Don't have an account ? </Text>
+                    <Text style={{ fontSize: 16, color: COLORS.black }}>¿No tienes una cuenta?</Text>
                     <Pressable
                         onPress={() => navigation.navigate("Signup")}
                     >

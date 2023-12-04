@@ -61,7 +61,7 @@ const Signup = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>Mobile Number</Text>
+                    }}>Número telefónico</Text>
 
                     <View style={{
                         width: "100%",
@@ -102,7 +102,7 @@ const Signup = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>Password</Text>
+                    }}>Contraseña</Text>
 
                     <View style={{
                         width: "100%",
@@ -157,7 +157,7 @@ const Signup = ({ navigation }) => {
                 </View>
 
                 <Button
-                    title="Sign Up"
+                    title="Registrarse"
                     filled
                     style={{
                         marginTop: 18,
@@ -249,7 +249,7 @@ const Signup = ({ navigation }) => {
                     justifyContent: "center",
                     marginVertical: 22
                 }}>
-                    <Text style={{ fontSize: 16, color: COLORS.black }}>Already have an account</Text>
+                    <Text style={{ fontSize: 16, color: COLORS.black }}>Ya tienes una cuenta</Text>
                     <Pressable
                         onPress={() => navigation.navigate("Login")}
                     >

@@ -95,27 +95,27 @@ const Welcome = ({ navigation }) => {
                         fontSize: 50,
                         fontWeight: 800,
                         color: COLORS.white
-                    }}>Let's Get</Text>
+                    }}>Bienvenidos a</Text>
                     <Text style={{
                         fontSize: 46,
                         fontWeight: 800,
                         color: COLORS.white
-                    }}>Started</Text>
+                    }}>CLUE</Text>
 
                     <View style={{ marginVertical: 22 }}>
                         <Text style={{
                             fontSize: 16,
                             color: COLORS.white,
                             marginVertical: 4
-                        }}>Connect with each other with chatting</Text>
+                        }}>Conecta con tu tienda favorita</Text>
                         <Text style={{
                             fontSize: 16,
                             color: COLORS.white,
-                        }}>Calling, Enjoy Safe and private texting</Text>
+                        }}>Tu pedido llegara a tu domicilio</Text>
                     </View>
 
                     <Button
-                        title="Join Now"
+                        title="Únete ahora"
                         onPress={() => navigation.navigate("Signup")}
                         style={{
                             marginTop: 22,
@@ -131,7 +131,7 @@ const Welcome = ({ navigation }) => {
                         <Text style={{
                             fontSize: 16,
                             color: COLORS.white
-                        }}>Already have an account ?</Text>
+                        }}>Ya tienes una cuenta ?</Text>
                         <Pressable
                             onPress={() => navigation.navigate("Login")}
                         >
@@ -140,7 +140,7 @@ const Welcome = ({ navigation }) => {
                                 color: COLORS.white,
                                 fontWeight: "bold",
                                 marginLeft: 4
-                            }}>Login</Text>
+                            }}>Iniciar sesión</Text>
                         </Pressable>
 
                     </View>

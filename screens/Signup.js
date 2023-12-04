@@ -19,13 +19,13 @@ const Signup = ({ navigation }) => {
                         marginVertical: 12,
                         color: COLORS.black
                     }}>
-                        Create Account
+                        Crear una cuenta
                     </Text>
 
                     <Text style={{
                         fontSize: 16,
                         color: COLORS.black
-                    }}>Connect with your friend today!</Text>
+                    }}>Contacta a tu tienda favorita</Text>
                 </View>
 
                 <View style={{ marginBottom: 12 }}>
@@ -33,7 +33,7 @@ const Signup = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>Email address</Text>
+                    }}>Dirección de correo electrónico</Text>
 
                     <View style={{
                         width: "100%",
@@ -46,7 +46,7 @@ const Signup = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Enter your email address'
+                            placeholder='Introduce tu dirección de correo electrónico'
                             placeholderTextColor={COLORS.black}
                             keyboardType='email-address'
                             style={{
@@ -75,7 +75,7 @@ const Signup = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='+91'
+                            placeholder='+593'
                             placeholderTextColor={COLORS.black}
                             keyboardType='numeric'
                             style={{
@@ -87,7 +87,7 @@ const Signup = ({ navigation }) => {
                         />
 
                         <TextInput
-                            placeholder='Enter your phone number'
+                            placeholder='Ingresa tu número telefónico'
                             placeholderTextColor={COLORS.black}
                             keyboardType='numeric'
                             style={{
@@ -115,7 +115,7 @@ const Signup = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Enter your password'
+                            placeholder='Ingresa tu contraseña'
                             placeholderTextColor={COLORS.black}
                             secureTextEntry={isPasswordShown}
                             style={{
@@ -153,7 +153,7 @@ const Signup = ({ navigation }) => {
                         color={isChecked ? COLORS.primary : undefined}
                     />
 
-                    <Text>I aggree to the terms and conditions</Text>
+                    <Text>Acepto los términos y condiciones.</Text>
                 </View>
 
                 <Button
@@ -174,7 +174,7 @@ const Signup = ({ navigation }) => {
                             marginHorizontal: 10
                         }}
                     />
-                    <Text style={{ fontSize: 14 }}>Or Sign up with</Text>
+                    <Text style={{ fontSize: 14 }}>O regístrate con</Text>
                     <View
                         style={{
                             flex: 1,
@@ -258,7 +258,7 @@ const Signup = ({ navigation }) => {
                             color: COLORS.primary,
                             fontWeight: "bold",
                             marginLeft: 6
-                        }}>Login</Text>
+                        }}>Iniciar sesión</Text>
                     </Pressable>
                 </View>
             </View>

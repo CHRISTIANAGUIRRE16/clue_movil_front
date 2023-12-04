@@ -20,13 +20,13 @@ const Login = ({ navigation }) => {
                         marginVertical: 12,
                         color: COLORS.black
                     }}>
-                        Hi Welcome Back ! 👋
+                        Hola ¡Bienvenido de nuevo! 👋
                     </Text>
 
                     <Text style={{
                         fontSize: 16,
                         color: COLORS.black
-                    }}>Hello again you have been missed!</Text>
+                    }}>¡Hola de nuevo te hemos extrañado!</Text>
                 </View>
 
                 <View style={{ marginBottom: 12 }}>
@@ -34,7 +34,7 @@ const Login = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>Email address</Text>
+                    }}>Dirección de correo electrónico</Text>
 
                     <View style={{
                         width: "100%",
@@ -47,7 +47,7 @@ const Login = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Enter your email address'
+                            placeholder='Introduce tu dirección de correo electrónico'
                             placeholderTextColor={COLORS.black}
                             keyboardType='email-address'
                             style={{
@@ -75,7 +75,7 @@ const Login = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Enter your password'
+                            placeholder='Ingresa tu contraseña'
                             placeholderTextColor={COLORS.black}
                             secureTextEntry={isPasswordShown}
                             style={{
@@ -113,7 +113,7 @@ const Login = ({ navigation }) => {
                         color={isChecked ? COLORS.primary : undefined}
                     />
 
-                    <Text>Remenber Me</Text>
+                    <Text>Acuérdate de mí</Text>
                 </View>
 
                 <Button
@@ -218,7 +218,7 @@ const Login = ({ navigation }) => {
                             color: COLORS.primary,
                             fontWeight: "bold",
                             marginLeft: 6
-                        }}>Register</Text>
+                        }}> Registro</Text>
                     </Pressable>
                 </View>
             </View>

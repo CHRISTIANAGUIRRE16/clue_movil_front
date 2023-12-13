@@ -1,5 +1,5 @@
-import { View, Text, Image , Pressable, TextInput, TouchableOpacity } from 'react-native'
-import React, { useState } from 'react'
+import { View, Text, Image, Pressable, TextInput, TouchableOpacity } from 'react-native'
+import React, { useState, useEffect } from 'react'
 import { SafeAreaView } from "react-native-safe-area-context";
 import COLORS from '../constants/color';
 import { Ionicons } from "@expo/vector-icons";
@@ -9,7 +9,26 @@ import Button from '../components/Button';
 const Login = ({ navigation }) => {
     const [isPasswordShown, setIsPasswordShown] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
-    
+    const [isLoading, setLoading] = useState(true);
+    const [data, setData] = useState([]);
+
+
+    // Función para realizar la petición GET
+    const fetchData = async () => {
+        try {
+            const response = await fetch('http://161.97.140.245:8094/api/user/',{ mode: 'no-cors',});
+            const json = await response.json();
+            setData(json);
+        } catch (error) {
+            console.error('Error:', error.message);
+        }
+    };
+
+    useEffect(() => {
+        // Llamar a la función para realizar la petición cuando el componente se monte
+        fetchData();
+    }, []);
+
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
             <View style={{ flex: 1, marginHorizontal: 22 }}>
@@ -54,6 +73,21 @@ const Login = ({ navigation }) => {
                                 width: "100%"
                             }}
                         />
+                    </View>
+                    <View>
+                        {isLoading ? (
+                            <Text style={{backgroundColor:COLORS.black}}> fallo la peticions</Text>
+                        ) : (
+                            <FlatList
+                                data={data}
+                                keyExtractor={({ id }) => id}
+                                renderItem={({ item }) => (
+                                    <Text style={{backgroundColor:COLORS.black}}>
+                                        {item.firstName}
+                                    </Text>
+                                )}
+                            />
+                        )}
                     </View>
                 </View>
 
@@ -221,8 +255,8 @@ const Login = ({ navigation }) => {
                         }}> Registro</Text>
                     </Pressable>
                 </View>
-            </View>
-        </SafeAreaView>
+            </View >
+        </SafeAreaView >
     )
 }
 

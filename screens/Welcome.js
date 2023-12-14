@@ -111,7 +111,7 @@ const Welcome = ({ navigation }) => {
                         <Text style={{
                             fontSize: 16,
                             color: COLORS.white,
-                        }}>Tu pedido llegara a tu domicilio</Text>
+                        }}>Tu pedido llegará a tu domicilio</Text>
                     </View>
 
                     <Button
